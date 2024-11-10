@@ -8,7 +8,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* start of navbar */
+/* navbar styling */
 
 .navbar{
     display: flex;
@@ -39,7 +39,7 @@ body{
     color: white;
 }
 
-/* start of main container */
+/* main container styling */
 
 .main-container{
     display: flex;
@@ -102,7 +102,7 @@ video{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* start of trending-now content */
+/* trending-now content styling */
 
 .trendingnow p{
     text-align: center;
@@ -129,7 +129,7 @@ video{
     border-radius: 0.7rem;
 }
 
-/* start of only-on-netflix content */
+/* only-on-netflix content styling */
 
 .only-on-netflix p{
     text-align: center;
@@ -159,7 +159,7 @@ video{
     transform: scale(1.05);
 }
 
-/* start of plans */
+/* plans styling */
 
 .plans p {
     text-align: center;
@@ -207,7 +207,7 @@ video{
     text-align: center;
 }
 
-/* start of more-reasons-to-join content */
+/* more-reasons-to-join content styling */
 
 .more-reasons-to-join p{
     text-align: center;
@@ -243,7 +243,7 @@ video{
     background-color: rgba(255, 0, 0, 0.6);
 }
 
-/* start of footer */
+/* footer styling */
 
 .footer{
     display: flex;
