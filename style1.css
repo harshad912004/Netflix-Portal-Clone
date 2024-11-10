@@ -1,0 +1,479 @@
+/* body styling */
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* start of navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logo{
+    height: 90px;
+    width: 250px;
+    object-fit: cover;
+}
+
+#signin_button{
+    height: 40px;
+    width: 120px;
+    margin: 0 0 0 65rem;
+    padding: 1.rem 4rem 0 0;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+#signin_button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* start of main container */
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container{
+    text-align: center;
+}
+
+video{
+    margin: 4.5rem 0 0 5.5rem;
+    width: 1100px;
+    height: 440px;
+    object-fit: cover;
+    z-index: -1;
+    border: 0.2rem solid red;
+    border-radius: 1rem;
+}
+
+#playPauseButton{
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#playPauseButton:hover{
+    background-color: red;
+    transform: scale(1.1);
+}
+
+.text-overlay{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.text-overlay h1{
+    font-size: 50px;
+    margin: 0;
+}
+ 
+.text-overlay p{
+    font-size: 30px;
+    margin: 0.2rem 0 0 0;
+}
+
+.text-overlay h1, .text-overlay p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* start of trending-now content */
+
+.trendingnow p{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin: 2rem 0 0 0;
+}
+
+.trendingnow .img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0.5rem 0 0;
+}
+
+.trendingnow .img #movie-logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0.5rem 0 0;
+    height: 300px;
+    width: 210px;
+    border: 0.03rem solid red;
+    border-radius: 0.7rem;
+}
+
+/* start of only-on-netflix content */
+
+.only-on-netflix p{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.only-on-netflix .img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0.5rem 0 0;
+}
+
+.only-on-netflix .img #movie-logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0.5rem 0 0;
+    height: 300px;
+    width: 210px;
+    border: 0.03rem solid red;
+    border-radius: 0.7rem;
+}
+
+#movie-logo:hover {
+    transform: scale(1.05);
+}
+
+/* start of plans */
+
+.plans p {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.plans h1 {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+.plans .plan-boxes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.plans .plan-box {
+    height: 200px;
+    width: 250px;
+    margin: 0 10px;
+    border: 0.03rem solid red;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-40deg, #2d44ca, #951c85);
+}
+
+.plans .plan-box h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.plans .plan-box:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.plans .plan-box p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* start of more-reasons-to-join content */
+
+.more-reasons-to-join p{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.more-reasons-to-join .boxes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.more-reasons-to-join .box{
+    height: 150px;
+    width: 300px;
+    margin: 0 10px;
+    background-color: rgba(55, 37, 37, 0.332);
+    border: 0.03rem solid red;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-reasons-to-join .box p{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.more-reasons-to-join .box:hover{
+    transform: scale(1.05);
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+/* start of footer */
+
+.footer{
+    display: flex;
+}
+
+.footer div{
+    margin: 1rem 8rem 0 0;
+}
+
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer li{
+    margin-bottom: 15px;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.footer a:hover{
+    color: red;
+}
+
+hr{
+    margin-top: 2.5rem;
+    width: 90%;
+    border: 0;
+    border-top: 2px solid red;
+}
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #signin_button {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .video-container {
+        margin-top: 2rem;
+    }
+
+    video {
+        width: 90%;
+        height: auto;
+        margin: 2rem 0;
+    }
+
+    .main-container {
+        padding: 0 1rem;
+    }
+
+    .text-overlay h1 {
+        font-size: 40px;
+    }
+
+    .text-overlay p {
+        font-size: 25px;
+    }
+
+    .trendingnow p, .only-on-netflix p, .plans p, .more-reasons-to-join p {
+        font-size: 2.5rem;
+    }
+
+    .trendingnow .img, .only-on-netflix .img {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .plans .plan-boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .plans .plan-box {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .more-reasons-to-join .boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .more-reasons-to-join .box {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer div {
+        margin: 1rem 0;
+    }
+}
+
+/* For screens smaller than 900px */
+@media (max-width: 900px) {
+    #logo {
+        height: 60px;
+        width: auto;
+    }
+
+    #signin_button {
+        width: 100px;
+        padding: 0.8rem 2rem 0 0;
+    }
+
+    video {
+        width: 80%;
+        height: auto;
+        margin: 2rem auto;
+    }
+
+    .text-overlay h1 {
+        font-size: 35px;
+    }
+
+    .text-overlay p {
+        font-size: 22px;
+    }
+
+    .trendingnow .img, .only-on-netflix .img {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .plans .plan-box {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .more-reasons-to-join .box {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .footer div {
+        margin: 1rem 4rem;
+    }
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    #signin_button {
+        width: 80px;
+        padding: 0.5rem 1.5rem 0 0;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+        margin: 2rem 0;
+    }
+
+    .text-overlay h1 {
+        font-size: 30px;
+    }
+
+    .text-overlay p {
+        font-size: 20px;
+    }
+
+    .trendingnow p, .only-on-netflix p, .plans p, .more-reasons-to-join p {
+        font-size: 2rem;
+    }
+
+    .plans .plan-box {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .more-reasons-to-join .box {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .footer div {
+        margin: 1rem 2rem;
+    }
+}
+
+/* For screens smaller than 400px */
+@media (max-width: 400px) {
+    #signin_button {
+        width: 70px;
+        padding: 0.5rem 1rem 0 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    video {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .text-overlay h1 {
+        font-size: 25px;
+    }
+
+    .text-overlay p {
+        font-size: 18px;
+    }
+
+    .plans .plan-box {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .more-reasons-to-join .box {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .footer div {
+        margin: 1rem 0;
+    }
+}

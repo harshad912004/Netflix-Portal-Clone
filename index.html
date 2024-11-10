@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="NetflixClone1.css">
+</head>
+<body>
+    <!-- start of navbar -->
+    <nav class="navbar">
+        <img src="images/logo.jpeg" alt="netflix-logo" id="logo">
+        <div id="signin_button"><a href="#">SIGN IN</a></div>
+    </nav>
+
+    <!-- start of main-container -->
+    <div class="main-container">
+
+        <!-- Video Section -->
+        <div class="video-container">
+            <video id="myVideo" autoplay loop muted>
+                <source src="images/homevideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="playPauseButton">Play</button>
+        </div>
+
+        <!-- Text Overlay on Video -->
+        <div class="text-overlay">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <p>Start at ₹149. Cancel at any time.</p>
+        </div>
+
+        <hr>
+
+        <!-- start of trending now content -->
+        <div class="trendingnow">
+            <p>Trending Now</p>
+            <div class="img">
+                <img src="images/AAAABbQBo_zWfdUcoE4_Lr9ZtEEmslwCCxIspjPmpzWHGvCQ_ouuYOp4LFDfDa6Dvo5J1uChPXfw2C1lbyd1vGz-YPGnzBFOHw0nlrRQ.webp" alt="animal-movie-logo" id="movie-logo">
+                <img src="images/AAAABcOKVyDpoMqPMP8MRuASK8X0SenR-HIJphcwID5xC0PuCdn3p618nTL6h1n78t_ZpIA1aICPE6_D6_9nRHPnvAJUNf3aPy-W5hxfvjJpkqTovjtMJbt-2PSq0JjxnS9pS5xPJQ.webp" alt="dopatti-movie-logo" id="movie-logo">
+                <img src="images/AAAABcthhZIohsu0feEvCd4hCmcRUJ7wP3fSN1eBFLvYLO1E56hGa9dTJus3OZ8lyDSQxvaQNRgPWdZl58_S2BFIvPOEdJgKfhDatMWH8zOJRFTaukJ5FJRa1HutRInOIPCr6wsjLg.webp" alt="netflis-logo" id="movie-logo">
+                <img src="images/AAAABdAQQpTs146RWf1rxuhUrkfiDxfjM0hUhByIZFlqhpmRu98XjrTHReaeiL4ff_nIP5BTbr02MGqB8RCcc3Ug160nuk48PZeh1gAC.webp" alt="kalki-movie-logo" id="movie-logo">
+                <img src="images/AAAABdgTaBYCIB0eUZCFao0FYJoVkDyIb3sB6kOeRP1VfyY5eroA4xyfl2ajD0Lrn2Ury49eGUlr_86M3kHkjGEYCIKfB8j-ZqVfFmbV.webp" alt="khelkhelmain-movie-logo" id="movie-logo">
+                <img src="images/AAAABdX_SkmXvzMs18NypGz_dmG6TFi-hG7muzoqifB-Pf6LR95IC_rfXutQx4h3oSrSJjTh53ollje02j7Q3CYgKfGfkvlcsU2en17NlRFcUu8LiPb7_k_8gsxAOtycFZ6UG2CZAQ.webp" alt="netflis-logo" id="movie-logo">
+            </div>
+        </div>
+
+        <!-- start of only on netflix content -->
+        <div class="only-on-netflix">
+            <p>Only on Netflix</p>
+            <div class="img">
+                <img src="images/AAAABdyDf677xKDhkRcTwkvFAZvOeDx7A-eQsjEFNKpvfL_uFy_7BYGp4jxk3-NJthTodvyzhfvgu0-34afwO60IXCixQ_Kxkvx44DQiLBTrR4rcBe90JSzIu2tc8fXyrGE4A8enXg.webp" id="movie-logo">
+                <img src="images/AAAABQ26mhDTxFE58n5Cwgwe_ReId62_vwDTsFu8zNv9aO1OW6SWAbCeGIN_th8eHMv2sdDSY1rk6STdF7r2GGLshF5ID25njhBE0IeNcasFwPxHlF33NAPTXgZOCOX_NhMUGbXnBg.webp" alt="dopatti-movie-logo" id="movie-logo">
+                <img src="images/AAAABQglirjIaxoOiCMMR-c1tGj_PPI1Y9U4XqWB08v37yjJACx7rgEHpbuWbJpY6xp1Lsm9yZtnx7h4lDANdaGLK74CQU3SxfoX_Trh3ISBZ-gfbr8Yj1gLOXoLn8MaYltG9TD9fw.webp" alt="netflis-logo" id="movie-logo">
+                <img src="images/AAAABRL-Y-uKj1xcnKq4pS6q1hgnaEvgZlS9eaReRkChhlRBU0RgvJJqWDEx2fWbO_XXDuGkqu2hDDTo9GZF2E_xYBZchvwxfwIC3Dh0.webp" alt="kalki-movie-logo" id="movie-logo">
+                <img src="images/AAAABROJMgHuT0kF6UHU-1PgR5T6_MyUWbqAN8a70TMKBaTV6TDEif7AKv6BARn67_U4ZlVx31vWny9ljXaa74-HLXs3UD35gcXbnUcT56Bk9uqrh9jsBYaP-FGfSV8COqgJIyrNEg.webp" alt="khelkhelmain-movie-logo" id="movie-logo">
+                <img src="images/AAAABRY13rE6hFZeP981fDAgmKTcN4P0SzIOzCS8PMVNcm1A41O8G1dqia0SGeBUzBvFiH3JX_ugRAq5nbRkhsb4FpQy6PLwZyRw5cTO7EjbrO8YX7-Pk2joGpoaBQYi6RwFo4p11Q.webp" alt="netflis-logo" id="movie-logo">
+            </div>
+        </div>
+
+        <!-- start of plans -->
+        <div class="plans">
+            <p>A plan to suit your needs</p>
+            <div class="plan-boxes">
+                <div class="plan-box">
+                    <div class="box1"><h1>Mobile</h1><p>480p<br>₹149/m</p></div>
+                </div>
+                <div class="plan-box">
+                    <div class="box1"><h1>Basic</h1><p>720<br>₹199/m</p></div>
+                </div>
+                <div class="plan-box">
+                    <div class="box1"><h1>Standard</h1><p>1080<br>₹499/m</p></div>
+                </div>
+                <div class="plan-box">
+                    <div class="box1"><h1>Premium</h1><p>4K+HDR<br>₹649/m</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- start of more-reasons to join content -->
+        <div class="more-reasons-to-join">
+            <p>More Reasons To Join</p>
+            <div class="boxes">
+                <div class="box"><p>Stories tailored to your taste</p></div>
+                <div class="box"><p>Cancel or switch plans anytime</p></div>
+                <div class="box"><p>A place just for kids</p></div>
+                <div class="box"><p>For your phone, tablet, laptop and TV</p></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- start of footer -->
+
+        <footer class="footer">
+            <div>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Speed Test</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Help Centre</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="#">Legal Notice</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Ways to Watch</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                    <li><a href="#">On.y on Neflix</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Media Centre</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        var video = document.getElementById('myVideo');
+        var playPauseButton = document.getElementById('playPauseButton');
+        playPauseButton.addEventListener('click', function() {
+            if (video.paused) {
+                video.play();
+                playPauseButton.textContent = 'Pause';
+            } else {
+                video.pause();
+                playPauseButton.textContent = 'Play';
+            }
+        });
+    </script>
+</body>
+</html>
