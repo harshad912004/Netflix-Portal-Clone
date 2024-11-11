@@ -4,6 +4,7 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix | Dashboard</title>
     <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- start of navbar -->
@@ -15,21 +16,21 @@
     <!-- start of main-container -->
     <div class="main-container">
         <!-- Video Section -->
-        <!-- <div class="video-container">
+        <div class="video-container">
             <video id="myVideo" autoplay loop muted>
                 <source src="images/homevideo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <button id="playPauseButton">Play</button>
-        </div> -->
+            <button id="playPauseButton"><i class="fas fa-play"></i></button>
+        </div>
 
         <!-- Text Overlay on Video -->
-        <!-- <div class="text-overlay">
+        <div class="text-overlay">
             <h1>Unlimited movies, TV shows, and more</h1>
             <p>Start at ₹149. Cancel at any time.</p>
         </div>
 
-        <hr> -->
+        <hr>
 
         <!-- start of trending now content -->
         <!-- <div class="trendingnow">
@@ -126,23 +127,19 @@
         </footer>
     </div> -->
 
-    <script type="text/javascript">
-        window.addEventListener("scroll", function() {
-            var nav = document.querySelector("nav");
-            nav.classList.toggle("sticky", window.scrollY > 0);
-        })
-        
-        var video = document.getElementById('myVideo');
-        var playPauseButton = document.getElementById('playPauseButton');
-        playPauseButton.addEventListener('click', function() {
+    <script>
+        const video = document.getElementById('myVideo');
+        const playPauseButton = document.getElementById('playPauseButton');        
+        playPauseButton.addEventListener('click', () => {
             if (video.paused) {
                 video.play();
-                playPauseButton.textContent = 'Pause';
+                playPauseButton.innerHTML = '<i class="fas fa-pause"></i>';
             } else {
                 video.pause();
-                playPauseButton.textContent = 'Play';
+                playPauseButton.innerHTML = '<i class="fas fa-play"></i>';
             }
         });
     </script>
+    
 </body>
 </html>

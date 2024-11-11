@@ -41,9 +41,9 @@ nav.sticky {
     width: 6rem;
     height: auto;
     display: flex;
+    margin-right: 4rem;
     align-items: center;
     padding: 0.5rem 1rem;
-    margin-right: 4rem;
     border-radius: 1.5rem;
     background-color: red;
     justify-content: center;
@@ -66,28 +66,33 @@ nav.sticky {
     border: 0.1rem solid blue;
 }
 
-/* .video-container{
+.video-container{
+    position: relative;
     text-align: center;
+    border: 0.1rem solid green;
 }
 
-video{
-    margin: 4.5rem 0 0 5.5rem;
-    width: 1100px;
-    height: 440px;
-    object-fit: cover;
+#myVideo{
     z-index: -1;
+    margin: 2rem;
+    width: 1350px;
+    height: 545px;
+    object-fit: cover;
     border: 0.2rem solid red;
-    border-radius: 1rem;
 }
 
 #playPauseButton{
-    background-color: red;
-    color: white;
-    font-size: 16px;
-    padding: 10px;
+    z-index: 2;
+    right: 70px;
     border: none;
+    bottom: 70px;
+    padding: 10px;
+    color: white;
     cursor: pointer;
+    font-size: 16px;
+    position: absolute;
     border-radius: 0.5rem;
+    background-color: red;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -97,13 +102,14 @@ video{
 }
 
 .text-overlay{
-    position: absolute;
     top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
     z-index: 1;
+    bottom: 20px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 
 .text-overlay h1{
@@ -113,12 +119,12 @@ video{
  
 .text-overlay p{
     font-size: 30px;
-    margin: 0.2rem 0 0 0;
+    margin-top: 0.2rem;
 }
 
 .text-overlay h1, .text-overlay p {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-} */
+}
 
 /* trending-now content styling */
 
@@ -317,19 +323,34 @@ hr{
     }
 
     #logo {
-        width: 7.5rem;
+        width: 6.5rem;
     }
 
     #signin_button {
-        width: 6rem;
+        width: 4rem;
     }
 
     #signin_button a {
-        font-size: 1.1rem;
+        font-size: 0.6rem;
     }
 
     .main-container{
-        margin-top: 4rem;
+        margin-top: 3.5rem;
+    }
+
+    #myVideo{
+        margin: 2rem;
+        width: 250px;
+        height: 100px;
+        border-radius: 0.5rem;
+    }
+
+    #playPauseButton{
+        right: 40px;
+        bottom: 42px;
+        padding: 8px;
+        font-size: 12px;
+        border-radius: 4rem;
     }
 }
 
@@ -341,19 +362,34 @@ hr{
     }
 
     #logo {
-        width: 8rem;
+        width: 7.5rem;
     }
 
     #signin_button {
-        width: 6rem;
+        width: 5rem;
     }
 
     #signin_button a {
-        font-size: 1.3rem;
+        font-size: 0.8rem;
     }
 
     .main-container{
         margin-top: 4.5rem;
+    }
+
+    #myVideo{
+        margin: 2rem;
+        width: 400px;
+        height: 160px;
+        border-radius: 1rem;
+    }
+
+    #playPauseButton{
+        right: 50px;
+        bottom: 50px;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 4rem;
     }
 }
 
@@ -369,15 +405,30 @@ hr{
     }
 
     #signin_button {
-        width: 6rem;
+        width: 5rem;
     }
 
     #signin_button a {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .main-container{
         margin-top: 5rem;
+    }
+
+    #myVideo{
+        margin: 2rem;
+        width: 700px;
+        height: 285px;
+        border-radius: 1.5rem;
+    }
+
+    #playPauseButton{
+        right: 60px;
+        bottom: 60px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4rem;
     }
 }
 
@@ -393,15 +444,30 @@ hr{
     }
 
     #signin_button {
-        width: 6rem;
+        width: 5.5rem;
     }
 
     #signin_button a {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .main-container{
         margin-top: 5.5rem;
+    }
+
+    #myVideo{
+        margin: 2rem;
+        width: 950px;
+        height: 385px;
+        border-radius: 2rem;
+    }
+
+    #playPauseButton{
+        right: 60px;
+        bottom: 60px;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 4rem;
     }
 }
 
@@ -427,6 +493,21 @@ hr{
     .main-container{
         margin-top: 6rem;
     }
+
+    #myVideo{
+        margin: 2rem;
+        width: 1200px;
+        height: 485px;
+        border-radius: 2.5rem;
+    }
+
+    #playPauseButton{
+        right: 60px;
+        bottom: 60px;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 4rem;
+    }
 }
 
 /* For screens greater than 1440px */
@@ -450,5 +531,20 @@ hr{
 
     .main-container{
         margin-top: 6.5rem;
+    }
+
+    #myVideo{
+        margin: 2rem;
+        width: 1350px;
+        height: 545px;
+        border-radius: 3rem;
+    }
+
+    #playPauseButton{
+        right: 60px;
+        bottom: 60px;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 4rem;
     }
 }
