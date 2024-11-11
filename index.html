@@ -14,26 +14,25 @@
 
     <!-- start of main-container -->
     <div class="main-container">
-
         <!-- Video Section -->
-        <div class="video-container">
+        <!-- <div class="video-container">
             <video id="myVideo" autoplay loop muted>
                 <source src="images/homevideo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <button id="playPauseButton">Play</button>
-        </div>
+        </div> -->
 
         <!-- Text Overlay on Video -->
-        <div class="text-overlay">
+        <!-- <div class="text-overlay">
             <h1>Unlimited movies, TV shows, and more</h1>
             <p>Start at ₹149. Cancel at any time.</p>
         </div>
 
-        <hr>
+        <hr> -->
 
         <!-- start of trending now content -->
-        <div class="trendingnow">
+        <!-- <div class="trendingnow">
             <p>Trending Now</p>
             <div class="img">
                 <img src="images/AAAABbQBo_zWfdUcoE4_Lr9ZtEEmslwCCxIspjPmpzWHGvCQ_ouuYOp4LFDfDa6Dvo5J1uChPXfw2C1lbyd1vGz-YPGnzBFOHw0nlrRQ.webp" alt="animal-movie-logo" id="movie-logo">
@@ -43,11 +42,11 @@
                 <img src="images/AAAABdgTaBYCIB0eUZCFao0FYJoVkDyIb3sB6kOeRP1VfyY5eroA4xyfl2ajD0Lrn2Ury49eGUlr_86M3kHkjGEYCIKfB8j-ZqVfFmbV.webp" alt="khelkhelmain-movie-logo" id="movie-logo">
                 <img src="images/AAAABdX_SkmXvzMs18NypGz_dmG6TFi-hG7muzoqifB-Pf6LR95IC_rfXutQx4h3oSrSJjTh53ollje02j7Q3CYgKfGfkvlcsU2en17NlRFcUu8LiPb7_k_8gsxAOtycFZ6UG2CZAQ.webp" alt="netflis-logo" id="movie-logo">
             </div>
-        </div>
+        </div> -->
 
         <!-- start of only on netflix content -->
         <div class="only-on-netflix">
-            <p>Only on Netflix</p>
+            <!-- <p>Only on Netflix</p>
             <div class="img">
                 <img src="images/AAAABdyDf677xKDhkRcTwkvFAZvOeDx7A-eQsjEFNKpvfL_uFy_7BYGp4jxk3-NJthTodvyzhfvgu0-34afwO60IXCixQ_Kxkvx44DQiLBTrR4rcBe90JSzIu2tc8fXyrGE4A8enXg.webp" id="movie-logo">
                 <img src="images/AAAABQ26mhDTxFE58n5Cwgwe_ReId62_vwDTsFu8zNv9aO1OW6SWAbCeGIN_th8eHMv2sdDSY1rk6STdF7r2GGLshF5ID25njhBE0IeNcasFwPxHlF33NAPTXgZOCOX_NhMUGbXnBg.webp" alt="dopatti-movie-logo" id="movie-logo">
@@ -55,12 +54,12 @@
                 <img src="images/AAAABRL-Y-uKj1xcnKq4pS6q1hgnaEvgZlS9eaReRkChhlRBU0RgvJJqWDEx2fWbO_XXDuGkqu2hDDTo9GZF2E_xYBZchvwxfwIC3Dh0.webp" alt="kalki-movie-logo" id="movie-logo">
                 <img src="images/AAAABROJMgHuT0kF6UHU-1PgR5T6_MyUWbqAN8a70TMKBaTV6TDEif7AKv6BARn67_U4ZlVx31vWny9ljXaa74-HLXs3UD35gcXbnUcT56Bk9uqrh9jsBYaP-FGfSV8COqgJIyrNEg.webp" alt="khelkhelmain-movie-logo" id="movie-logo">
                 <img src="images/AAAABRY13rE6hFZeP981fDAgmKTcN4P0SzIOzCS8PMVNcm1A41O8G1dqia0SGeBUzBvFiH3JX_ugRAq5nbRkhsb4FpQy6PLwZyRw5cTO7EjbrO8YX7-Pk2joGpoaBQYi6RwFo4p11Q.webp" alt="netflis-logo" id="movie-logo">
-            </div>
+            </div> -->
         </div>
 
         <!-- start of plans -->
         <div class="plans">
-            <p>A plan to suit your needs</p>
+            <!-- <p>A plan to suit your needs</p>
             <div class="plan-boxes">
                 <div class="plan-box">
                     <div class="box1"><h1>Mobile</h1><p>480p<br>₹149/m</p></div>
@@ -74,12 +73,12 @@
                 <div class="plan-box">
                     <div class="box1"><h1>Premium</h1><p>4K+HDR<br>₹649/m</p></div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <!-- start of more-reasons to join content -->
         <div class="more-reasons-to-join">
-            <p>More Reasons To Join</p>
+            <!-- <p>More Reasons To Join</p>
             <div class="boxes">
                 <div class="box"><p>Stories tailored to your taste</p></div>
                 <div class="box"><p>Cancel or switch plans anytime</p></div>
@@ -88,11 +87,11 @@
             </div>
         </div>
 
-        <hr>
+        <hr> -->
 
         <!-- start of footer -->
 
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div>
                 <ul>
                     <li><a href="#">FAQ</a></li>
@@ -125,9 +124,14 @@
                 </ul>
             </div>
         </footer>
-    </div>
+    </div> -->
 
-    <script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+        
         var video = document.getElementById('myVideo');
         var playPauseButton = document.getElementById('playPauseButton');
         playPauseButton.addEventListener('click', function() {

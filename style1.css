@@ -1,8 +1,8 @@
 /* body styling */
 
 body{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     background-color: black;
     font-family: 'Times New Roman', Times, serif;
@@ -10,45 +10,63 @@ body{
 
 /* navbar styling */
 
-.navbar{
+nav{
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1111;
     display: flex;
-    justify-content: space-evenly;
+    height: 6.5rem;
+    position: fixed;
+    padding: 0 2rem;
+    transition: 0.6s;
     align-items: center;
+    border: 0.1rem solid red;
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+nav.sticky {
+    background: #0f0f0f;
 }
 
 #logo{
-    height: 90px;
-    width: 250px;
-    object-fit: cover;
+    width: 10rem;
+    height: auto;
+    object-fit: contain;
+    border: 0.1rem solid red;
 }
 
 #signin_button{
-    height: 40px;
-    width: 120px;
-    margin: 0 0 0 65rem;
-    padding: 1.rem 4rem 0 0;
-    background-color: red;
+    width: 6rem;
+    height: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    margin-right: 4rem;
+    border-radius: 1.5rem;
+    background-color: red;
+    justify-content: center;
 }
 
 #signin_button a{
-    text-decoration: none;
     color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
 }
 
 /* main container styling */
 
 .main-container{
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    margin-top: 6.5rem;
     align-items: center;
     justify-content: center;
+    border: 0.1rem solid blue;
 }
 
-.video-container{
+/* .video-container{
     text-align: center;
 }
 
@@ -100,11 +118,11 @@ video{
 
 .text-overlay h1, .text-overlay p {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
+} */
 
 /* trending-now content styling */
 
-.trendingnow p{
+/* .trendingnow p{
     text-align: center;
     color: white;
     font-size: 3rem;
@@ -127,11 +145,11 @@ video{
     width: 210px;
     border: 0.03rem solid red;
     border-radius: 0.7rem;
-}
+} */
 
 /* only-on-netflix content styling */
 
-.only-on-netflix p{
+/* .only-on-netflix p{
     text-align: center;
     color: white;
     font-size: 3rem;
@@ -157,11 +175,11 @@ video{
 
 #movie-logo:hover {
     transform: scale(1.05);
-}
+} */
 
 /* plans styling */
 
-.plans p {
+/* .plans p {
     text-align: center;
     color: white;
     font-size: 3rem;
@@ -205,11 +223,11 @@ video{
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
-}
+} */
 
 /* more-reasons-to-join content styling */
 
-.more-reasons-to-join p{
+/* .more-reasons-to-join p{
     text-align: center;
     color: white;
     font-size: 3rem;
@@ -241,11 +259,11 @@ video{
 .more-reasons-to-join .box:hover{
     transform: scale(1.05);
     background-color: rgba(255, 0, 0, 0.6);
-}
+} */
 
 /* footer styling */
 
-.footer{
+/* .footer{
     display: flex;
 }
 
@@ -278,202 +296,159 @@ hr{
     width: 90%;
     border: 0;
     border-top: 2px solid red;
-}
+} */
 
-/* For screens smaller than 1200px */
-@media (max-width: 1200px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
+
+
+
+
+
+
+
+
+
+
+/* For screens smaller than 480px */
+/* Mobile portrait view */
+
+@media (max-width: 480px) {
+    nav {
+        height: 4rem;
     }
 
-    #signin_button {
-        margin-left: 0;
-        margin-top: 1rem;
-    }
-
-    .video-container {
-        margin-top: 2rem;
-    }
-
-    video {
-        width: 90%;
-        height: auto;
-        margin: 2rem 0;
-    }
-
-    .main-container {
-        padding: 0 1rem;
-    }
-
-    .text-overlay h1 {
-        font-size: 40px;
-    }
-
-    .text-overlay p {
-        font-size: 25px;
-    }
-
-    .trendingnow p, .only-on-netflix p, .plans p, .more-reasons-to-join p {
-        font-size: 2.5rem;
-    }
-
-    .trendingnow .img, .only-on-netflix .img {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .plans .plan-boxes {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .plans .plan-box {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
-    .more-reasons-to-join .boxes {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .more-reasons-to-join .box {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer div {
-        margin: 1rem 0;
-    }
-}
-
-/* For screens smaller than 900px */
-@media (max-width: 900px) {
     #logo {
-        height: 60px;
-        width: auto;
+        width: 7.5rem;
     }
 
     #signin_button {
-        width: 100px;
-        padding: 0.8rem 2rem 0 0;
+        width: 6rem;
     }
 
-    video {
-        width: 80%;
-        height: auto;
-        margin: 2rem auto;
+    #signin_button a {
+        font-size: 1.1rem;
     }
 
-    .text-overlay h1 {
-        font-size: 35px;
-    }
-
-    .text-overlay p {
-        font-size: 22px;
-    }
-
-    .trendingnow .img, .only-on-netflix .img {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .plans .plan-box {
-        width: 90%;
-        margin-bottom: 1rem;
-    }
-
-    .more-reasons-to-join .box {
-        width: 90%;
-        margin-bottom: 1rem;
-    }
-
-    .footer div {
-        margin: 1rem 4rem;
+    .main-container{
+        margin-top: 4rem;
     }
 }
 
-/* For screens smaller than 600px */
-@media (max-width: 600px) {
+/* For screens greater than 481px and smaller than 767px*/
+/* Mobile landscape view */
+@media (min-width: 481px) and (max-width: 767px) {
+    nav {
+        height: 4.5rem;
+    }
+
+    #logo {
+        width: 8rem;
+    }
+
     #signin_button {
-        width: 80px;
-        padding: 0.5rem 1.5rem 0 0;
+        width: 6rem;
     }
 
-    video {
-        width: 100%;
-        height: auto;
-        margin: 2rem 0;
+    #signin_button a {
+        font-size: 1.3rem;
     }
 
-    .text-overlay h1 {
-        font-size: 30px;
-    }
-
-    .text-overlay p {
-        font-size: 20px;
-    }
-
-    .trendingnow p, .only-on-netflix p, .plans p, .more-reasons-to-join p {
-        font-size: 2rem;
-    }
-
-    .plans .plan-box {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
-    .more-reasons-to-join .box {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
-    .footer div {
-        margin: 1rem 2rem;
+    .main-container{
+        margin-top: 4.5rem;
     }
 }
 
-/* For screens smaller than 400px */
-@media (max-width: 400px) {
+/* For screens greater than 768px and smaller than 1023px*/
+/* Tablet portrait view */
+@media (min-width: 768px) and (max-width: 1023px) {
+    nav {
+        height: 5rem;
+    }
+
+    #logo {
+        width: 8.5rem;
+    }
+
     #signin_button {
-        width: 70px;
-        padding: 0.5rem 1rem 0 0;
+        width: 6rem;
     }
 
-    .navbar {
-        flex-direction: column;
+    #signin_button a {
+        font-size: 1.3rem;
     }
 
-    video {
-        width: 100%;
-        margin: 1rem 0;
+    .main-container{
+        margin-top: 5rem;
+    }
+}
+
+/* For screens greater than 1024px and smaller than 1439px*/
+/* Tablet landscape view */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    nav {
+        height: 5.5rem;
     }
 
-    .text-overlay h1 {
-        font-size: 25px;
+    #logo {
+        width: 9rem;
     }
 
-    .text-overlay p {
-        font-size: 18px;
+    #signin_button {
+        width: 6rem;
     }
 
-    .plans .plan-box {
-        width: 100%;
-        margin-bottom: 1rem;
+    #signin_button a {
+        font-size: 1.3rem;
     }
 
-    .more-reasons-to-join .box {
-        width: 100%;
-        margin-bottom: 1rem;
+    .main-container{
+        margin-top: 5.5rem;
+    }
+}
+
+/* For screens greater than 1280px and smaller than 1439px*/
+/* Small Laptop view */
+@media (min-width: 1280px) and (max-width: 1439px) {
+    nav {
+        height: 6rem;
     }
 
-    .footer div {
-        margin: 1rem 0;
+    #logo {
+        width: 9.5rem;
+    }
+
+    #signin_button {
+        width: 6rem;
+    }
+
+    #signin_button a {
+        font-size: 1.3rem;
+    }
+
+    .main-container{
+        margin-top: 6rem;
+    }
+}
+
+/* For screens greater than 1440px */
+/* Large Monitor view */
+@media (min-width: 1440px) {
+    nav {
+        height: 6.5rem;
+    }
+
+    #logo {
+        width: 10rem;
+    }
+
+    #signin_button {
+        width: 6rem;
+    }
+
+    #signin_button a {
+        font-size: 1.5rem;
+    }
+
+    .main-container{
+        margin-top: 6.5rem;
     }
 }
